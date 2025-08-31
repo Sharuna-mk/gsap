@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: 0;
+            outline: none;
+        }
+      .content{
+        display: flex;
+        position: relative;
+        
+      }
+      .content img{
+        width: 100%;
+      } 
+
+    .common {
+  width: 100%;
+  position: relative;
+}
+      .img{
+        position: relative;
+        overflow: hidden;
+      }
+     .button {
+  position: absolute;
+  top: 53%; /* vertically center */
+  left: 50%; /* horizontally center */
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.button a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background: rgba(0,0,0,0.5); /* makes it visible on light images */
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all ease 0.5s;
+  /* initially hidden */
+}
+
+
+
+.btn a:hover {
+  background: white;
+  color: black;
+}
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg bg-body-primary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img
+          src="./image/dior.png"
+          height="50px" width="200px" style="margin-left: 85vh;"></a>
+      
+ 
+          
+        </div>
+     
+    
+  </nav>
+
+   <div class="content">
+  <div class="col-6">
+    <div class="men common">
+        <div class="img">
+            <img src="./image/men.jpg" alt="" height="750px">
+        </div>
+        <div class="button">
+            <a href="./men/index.html">Shop Men</a>
+        </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="women common">
+        <div class="img">
+            <img src="./image/w.JPG" alt=""  height="750px">
+        </div>
+        <div class="button">
+            <a href="./miss/Index.html">Shop Women</a>
+        </div>
+    </div>
+  </div>
+   </div>
+    <!-- script -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <Script src="./script.js "></Script>
+</body>
+</html>

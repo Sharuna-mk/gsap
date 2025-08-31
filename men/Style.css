@@ -1,0 +1,47 @@
+#main2 {
+  width: 100%;
+  overflow-x: hidden;
+}
+#home {
+  /* margin-top: 100%; */
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+canvas {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.txt-home {
+  position: absolute;
+  top: 980%;
+  right: 0;
+  padding-left: 5vw;
+  width: 50%;
+  height: 100%;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.472);
+  backdrop-filter: blur(4px);
+}
+
+
+.txt-home h1 {
+  font-size: 4vw;
+}
+
+#h-one {
+  font-size: 8vw;
+  font-family: "hotel";
+}
+#h-two {
+  font-size: 2vw;
+  font-family: "hotel";
+}
+#h-three {
+  font-size: 1.1vw;
+  letter-spacing: 0.1vw;
+  font-family: Bellefair;
+  font-weight: 100;
+}
